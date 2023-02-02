@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-// import items from './items';
 
 import ContactList from './MyContactList/MyContactList';
 import ContactFilter from './MyContactFilter/MyContactFilter';
@@ -40,7 +39,7 @@ class MyContact extends Component {
       };
       return { items: [newContact, ...items] };
     });
-    return true;
+    
   };
 
   handleFilter = ({ target }) => {

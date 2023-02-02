@@ -13,10 +13,10 @@ class MyContactForm extends Component {
     e.preventDefault();
     const { onSubmint } = this.props;
     console.log(onSubmint);
-    const result = onSubmint({ ...this.state });
-    if (result) {
+     onSubmint({ ...this.state });
+    
       this.reset();
-    }
+  
   };
   reset() {
     this.setState({ name: '', number: '' });
