@@ -12,7 +12,7 @@ class MyContactForm extends Component {
   handleSubmint = e => {
     e.preventDefault();
     const { onSubmint } = this.props;
-    console.log(onSubmint);
+    
      onSubmint({ ...this.state });
     
       this.reset();
